@@ -35,7 +35,7 @@ ADD_LIBRARY(Cluster STATIC ${SRC_SRCS})
 
 ADD_EXECUTABLE(clusterManager main.cpp)
 # link library
-TARGET_LINK_LIBRARIES(clusterManager  Cluster TraceWorker pthread
+TARGET_LINK_LIBRARIES(clusterManager  Cluster TraceWorker NetApp pthread
                       boost_atomic boost_atomic boost_atomic boost_regex boost_regex boost_thread boost_system)
 
 # clean
